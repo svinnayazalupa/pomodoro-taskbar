@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <ApplicationIcon>pomodoro.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <AssemblyName>Pomodoro</AssemblyName>
+    <RootNamespace>PomodoroApp</RootNamespace>
+    <LangVersion>7.3</LangVersion>
+    <Deterministic>true</Deterministic>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>none</DebugType>
+    <DebugSymbols>false</DebugSymbols>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Product>Pomodoro</Product>
+    <AssemblyTitle>Pomodoro</AssemblyTitle>
+    <Description>A compact Pomodoro timer for the Windows taskbar</Description>
+    <Version>1.5.0</Version>
+    <FileVersion>1.5.0.0</FileVersion>
+    <AssemblyVersion>1.5.0.0</AssemblyVersion>
+    <NeutralLanguage>en</NeutralLanguage>
+    <DefineConstants>$(DefineConstants);WINFORMS</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <HighEntropyVA>true</HighEntropyVA>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="pomodoro.ico" />
+    <Compile Remove="engine-tests/**" />
+    <None Include="engine-tests/**" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
